@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.PushMenu.Web", "Sitecore.PushMenu.Web\Sitecore.PushMenu.Web.csproj", "{B7FF27FE-DC4F-4B94-BB96-E881B1650840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{F0A66DB9-A3DC-4932-851D-951E5AB6CA45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitecore", "Sitecore", "{D88085CD-CEDE-462C-873D-249F56418D8B}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Sitecore\Sitecore.Kernel.dll = Lib\Sitecore\Sitecore.Kernel.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Modules.PushMenu", "Sitecore.Modules.PushMenu\Sitecore.Modules.PushMenu.csproj", "{E07F1D3D-E2A3-479D-BE88-3EC60A0FA688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Modules.Framework", "Sitecore.Modules.Framework\Sitecore.Modules.Framework.csproj", "{CCE94ACD-C05C-45C5-A8A7-3B8B87FC34A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7FF27FE-DC4F-4B94-BB96-E881B1650840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FF27FE-DC4F-4B94-BB96-E881B1650840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FF27FE-DC4F-4B94-BB96-E881B1650840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FF27FE-DC4F-4B94-BB96-E881B1650840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07F1D3D-E2A3-479D-BE88-3EC60A0FA688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07F1D3D-E2A3-479D-BE88-3EC60A0FA688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07F1D3D-E2A3-479D-BE88-3EC60A0FA688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07F1D3D-E2A3-479D-BE88-3EC60A0FA688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE94ACD-C05C-45C5-A8A7-3B8B87FC34A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE94ACD-C05C-45C5-A8A7-3B8B87FC34A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE94ACD-C05C-45C5-A8A7-3B8B87FC34A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE94ACD-C05C-45C5-A8A7-3B8B87FC34A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D88085CD-CEDE-462C-873D-249F56418D8B} = {F0A66DB9-A3DC-4932-851D-951E5AB6CA45}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E07F1D3D-E2A3-479D-BE88-3EC60A0FA688}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Modules.PushMenu</RootNamespace>
+    <AssemblyName>Sitecore.Modules.PushMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\Lib\Sitecore\Sitecore.ContentSearch.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\Lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\FieldIDs.cs" />
+    <Compile Include="Constants\ItemIDs.cs" />
+    <Compile Include="Constants\TemplateIDs.cs" />
+    <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Extensions\SiteContextExtensions.cs" />
+    <Compile Include="Managers\InMemoryStrorageManager.cs" />
+    <Compile Include="Managers\FileStorageManager.cs" />
+    <Compile Include="Managers\IStorageManager.cs" />
+    <Compile Include="Managers\MenuTreeManager.cs" />
+    <Compile Include="Managers\PushMenuManager.cs" />
+    <Compile Include="Models\MenuDetail.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\PushMenuSettings.cs" />
+    <Compile Include="Models\SiteSettings.cs" />
+    <Compile Include="Pipelines\GetMenuHtml\GetMenuHtmlArgs.cs" />
+    <Compile Include="Pipelines\GetMenuHtml\GetMenuHtmlPipeline.cs" />
+    <Compile Include="Pipelines\GetMenuHtml\GetMenuHtmlProcessorBase.cs" />
+    <Compile Include="Pipelines\GetMenuModel\MatchTemplate.cs" />
+    <Compile Include="Pipelines\GetMenuModel\MapToModel.cs" />
+    <Compile Include="Pipelines\GetMenuModel\GetMenuModelArgs.cs" />
+    <Compile Include="Pipelines\GetMenuModel\GetMenuModelPipeline.cs" />
+    <Compile Include="Pipelines\GetMenuModel\GetMenuModelProcessorBase.cs" />
+    <Compile Include="Pipelines\GetMenuHtml\TraverseTree.cs" />
+    <Compile Include="Pipelines\GetMenuHtml\WrapInContainer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushMenuActionManager.cs" />
+    <Compile Include="PushMenuHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

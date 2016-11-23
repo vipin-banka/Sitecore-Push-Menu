@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Publish\Modules\PushMenu\Website</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Config/Include/Sitecore.Modules.PushMenu.config">
+      <publishTime>09/25/2016 00:37:36</publishTime>
+    </File>
+    <File Include="App_Config/Include/Sitecore.PushMenu.config">
+      <publishTime>07/16/2016 23:34:10</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/19/2016 11:38:42</publishTime>
+    </File>
+    <File Include="bin/Sitecore.ContentSearch.dll">
+      <publishTime>05/19/2016 11:39:06</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Kernel.dll">
+      <publishTime>05/19/2016 11:39:18</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Modules.PushMenu.dll">
+      <publishTime>09/25/2016 15:31:17</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Modules.PushMenu.pdb">
+      <publishTime>09/25/2016 15:31:17</publishTime>
+    </File>
+    <File Include="bin/Sitecore.PushMenu.dll">
+      <publishTime>07/16/2016 23:36:48</publishTime>
+    </File>
+    <File Include="bin/Sitecore.PushMenu.pdb">
+      <publishTime>07/16/2016 23:36:48</publishTime>
+    </File>
+    <File Include="bin/Sitecore.PushMenu.Web.dll">
+      <publishTime>09/25/2016 15:31:17</publishTime>
+    </File>
+    <File Include="bin/Sitecore.PushMenu.Web.pdb">
+      <publishTime>09/25/2016 15:31:17</publishTime>
+    </File>
+    <File Include="includes/css/bootstrap.css">
+      <publishTime>08/18/2016 18:49:49</publishTime>
+    </File>
+    <File Include="includes/css/ma5-mobile-menu.css">
+      <publishTime>08/18/2016 18:49:23</publishTime>
+    </File>
+    <File Include="includes/css/site.css">
+      <publishTime>08/18/2016 22:40:15</publishTime>
+    </File>
+    <File Include="includes/js/jquery.min.js">
+      <publishTime>08/18/2016 18:51:54</publishTime>
+    </File>
+    <File Include="includes/js/ma5-mobile-menu.js">
+      <publishTime>08/18/2016 21:53:41</publishTime>
+    </File>
+    <File Include="layouts/Sample layout push menu.aspx">
+      <publishTime>08/18/2016 22:40:38</publishTime>
+    </File>
+    <File Include="layouts/SitecorePushMenu/Sublayouts/PushMenu.ascx">
+      <publishTime>08/18/2016 21:53:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/16/2016 18:24:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
